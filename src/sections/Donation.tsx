@@ -59,8 +59,18 @@ const Donation = () => {
       <div className="absolute bottom-20 right-10 w-60 h-60 bg-[#d4af37]/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="mb-8 lg:mb-10">
+          <span className="inline-block px-4 py-2 bg-[#0d9ba8]/10 rounded-full text-sm font-medium text-[#0d9ba8] mb-4">
+            Support Us
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-[#1a1a2e]">
+            Support This <span className="text-gradient">Noble Cause</span>
+          </h2>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div className="space-y-6 min-w-0">
+
             <div
               className={`transition-all duration-700 ${
                 isVisible
@@ -68,17 +78,16 @@ const Donation = () => {
                   : 'opacity-0 translate-y-10'
               }`}
             >
-              <span className="inline-block px-4 py-2 bg-[#0d9ba8]/10 rounded-full text-sm font-medium text-[#0d9ba8] mb-4">
-                Support Us
-              </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1a1a2e] mb-6">
-                Support This <span className="text-gradient">Noble Cause</span>
-              </h2>
-              <p className="text-lg text-[#4a5568] leading-relaxed">
-                Your Support helps us maintain and improve the app, add new languages,
-                and reach more Muslims worldwide. Every contribution, no matter how small,
-                makes a difference.
-              </p>
+              <ul className="text-md text-[#19787C] leading-relaxed list-disc pl-6 space-y-2">
+                <li>Be a part of spreading the light of the Qur&apos;an</li>
+                <li>Your donation brings the Qur&apos;an closer to hearts</li>
+                <li>Help others understand the Qur&apos;an — Donate today</li>
+                <li>Knowledge of the Qur&apos;an is a gift — Share it</li>
+                <li>Support Tafheemul Qur&apos;an — A Sadaqah Jariyah opportunity</li>
+                <li>Empower minds with the message of the Qur&apos;an</li>
+                <li>Give today, benefit forever</li>
+                <li>Build a generation connected to the Qur&apos;an</li>
+              </ul>
             </div>
 
             <div
