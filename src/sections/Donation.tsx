@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Heart, Copy, Check } from 'lucide-react';
+import { Heart, Copy, Check, Mail, Phone } from 'lucide-react';
 
 const RAZORPAY_DONATION_URL = 'https://pages.razorpay.com/thafheem-donation';
 const UPI_ID = 'vyapar.176971524101@hdfcbank';
@@ -211,6 +211,35 @@ const Donation = () => {
                   <span className="font-semibold text-[#1a1a2e] text-right">CIVIL STATION</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className={`mt-8 lg:mt-10 transition-all duration-700 delay-300 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
+          <div className="rounded-2xl bg-gradient-to-r from-[#0d9ba8] to-[#0a7a85] px-5 py-5 sm:px-8 sm:py-6 shadow-lg shadow-[#0d9ba8]/20">
+            <p className="text-center text-white/90 text-sm font-semibold uppercase tracking-widest mb-3">
+              For queries, please contact us
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8">
+              <a
+                href="mailto:info@d4dx.co"
+                className="flex items-center gap-2 text-white font-semibold text-base sm:text-lg hover:text-white/80 transition-colors"
+              >
+                <Mail className="w-5 h-5 shrink-0" />
+                info@d4dx.co
+              </a>
+              <div className="hidden sm:block w-px h-6 bg-white/30" />
+              <a
+                href="tel:+919895804006"
+                className="flex items-center gap-2 text-white font-semibold text-base sm:text-lg hover:text-white/80 transition-colors"
+              >
+                <Phone className="w-5 h-5 shrink-0" />
+                +91 98958 04006
+              </a>
             </div>
           </div>
         </div>
